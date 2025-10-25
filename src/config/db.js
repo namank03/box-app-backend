@@ -4,7 +4,7 @@ require('dotenv').config();
 const connectDB = async () => {
   try {
     // Using MongoDB Atlas
-    const conn = await mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://namanop03_db_user:C3CKe2UlPcFOkmPf@box-app.x4rck4v.mongodb.net/?retryWrites=true&w=majority&appName=Box-App');
+    const conn = await mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://namanop03_db_user:password@box-app.x4rck4v.mongodb.net/?retryWrites=true&w=majority&appName=Box-App');
 
     console.log(`MongoDB Connected: ${conn.connection.host}`);
     return conn;
